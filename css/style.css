@@ -1,4 +1,5 @@
-/*Estilos generales*/
+/*ESTILOS GENERALES*/ 
+
 body {
     font-family: 'Varela Round', sans-serif;
     margin: 0;
@@ -16,6 +17,10 @@ header, footer {
 
 h1{
     font-family:'Tilt Prism', cursive;
+}
+
+h2{
+    font-family: 'Ubuntu', sans-serif;
 }
 
 nav {
@@ -46,7 +51,41 @@ nav a:hover {
     color: #ff9800;
 }
 
-/*Estilos de secciones*/
+/* Scroll to top */
+
+#scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    background-color: #007bff; 
+    border-radius: 50%; 
+    padding: 10px;
+    text-align: center;
+    font-size: 24px; 
+    text-decoration: none;
+    display: none; 
+    transition: background-color 0.3s; 
+}
+
+#scroll-to-top-button img {
+    display: block;
+    margin: 0 auto; 
+    width: 100%; 
+    height: auto;
+}
+
+#scroll-to-top-button:hover {
+    background-color: #0056b3; 
+}
+
+/* Mostrar el botón cuando se desplaza hacia abajo */
+@media (min-height: 400px) {
+    #scroll-to-top-button {
+        display: block;
+    }
+}
+
+/*SECCIONES*/
 .category {
     background-color: #d2d1d1;
     padding: 40px 0;
@@ -91,7 +130,7 @@ nav a:hover {
     margin: 0;
 }
 
-/*Información específica sobre el lugar de origen*/
+/*Información específica sobre el lugar de origen en cartas de INDEX*/
 
 .artist-details {
     position: relative;
@@ -134,7 +173,9 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-/*Estilos para la sección de introducción*/
+
+
+/*INTRODUCCIÓN*/
 .intro {
     background-color: #ff9800;
     color: white;
@@ -196,7 +237,8 @@ nav a:hover {
     margin-top: -40px;
 }
 
-/*Estilos para el footer*/
+
+/*FOOTER*/
 footer {
     margin-top: 20px;
 }
@@ -212,7 +254,84 @@ a:hover {
     color: #ffa726;
 }
 
-/*Media queries para responsividad/ Adaptación para pantallas de móviles */
+/* Ajustes generales y ROCK*/
+.rock-page{
+    background-color: #b5b2ac;
+}
+
+.alternative-page{
+    background-color: #ff9800;
+}
+
+/* color/margen de tarjeta de secciones */
+.card.custom-card-rock{
+    background-color: #535353;
+    border: 2px solid white;
+    margin-bottom: 15px;
+}
+
+/* modificando las tarjetas de bootstrap (ROCK)*/
+.card-text{
+    color: white;
+    text-align: justify;
+}
+.card-text-rock{
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.titles-card{
+    justify-content: center;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/*h2 de sección rock*/
+
+.sections-title2rock{
+    margin-top: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+
+/* Ajustes generales y ALTERNATIVO */
+
+.alternative-page{
+    background-color: #b5b2ac;
+}
+
+
+/* color/margen de tarjeta de secciones */
+.card.custom-card-alternative{
+    background-color: #604868;
+    border: 2px solid white;
+    margin-bottom: 15px;
+}
+
+/* modificando las tarjetas de bootstrap (ALTERNATIVO)*/
+.card-text{
+    color: white;
+    text-align: justify;
+}
+.card-text-alternative{
+    font-family: 'Yatra One', cursive;
+}
+
+.titles-card{
+    justify-content: center;
+    text-align: center;
+    font-family: 'Fruktur', cursive;
+}
+
+/*h2 de sección alternativo*/
+
+.sections-title2alternative{
+    margin-top: 25px;
+    font-family: 'Yatra One', cursive;
+}
+
+
+/*MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
     nav ul {
         flex-direction: column;
