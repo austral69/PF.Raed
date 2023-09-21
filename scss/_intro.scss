@@ -1,0 +1,224 @@
+/*SCROLL2TOP */
+
+#scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+    display: none;
+    transition: background-color 0.3s;
+  
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+    }
+  
+    &:hover {
+      background-color: #0056b3;
+    }
+}
+  
+/*MEDIA DE SCROLL EN MEDIAS*/
+.category {
+    background-color: #d2d1d1;
+    padding: 40px 0;
+    text-align: center;
+  
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+  }
+  
+  .artist {
+    display: inline-block;
+    margin: 0 15px;
+    max-width: 250px;
+    text-align: center;
+  
+    img {
+      max-width: 100%;
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+  }
+  
+  .artist-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+  
+    img {
+      width: 60px;
+      margin-right: 3px;
+    }
+  
+    p {
+      margin: 0;
+    }
+  }
+  
+  .question-mark {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .question-mark-image {
+    max-width: 40%;
+    max-height: 40%;
+    margin-top: 10px;
+  }
+  
+  .question-mark-text {
+    position: absolute;
+    top: 100%;
+  
+    /* Cambiamos "top" para que esté debajo de la imagen */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+  
+    /* Ajustamos el espaciado interior */
+    border-radius: 10px;
+  
+    /* Agregamos bordes redondeados */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .question-mark-link:hover .question-mark-text {
+    opacity: 1;
+}
+
+.artist-details {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .country-info {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  .artist-details:hover .country-info {
+    opacity: 1;
+  }
+  
+  .artist {
+    h3 {
+      font-size: 20px;
+      margin-top: 10px;
+      color: #333;
+    }
+  
+    p {
+      font-size: 16px;
+      color: #777;
+    }
+  
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+  
+  .intro {
+    background-image: linear-gradient(to bottom, #ff9800, #CE520A);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .intro-paragraph {
+    text-align: justify;
+  
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+  }
+  
+  .intro-subtitle {
+    text-align: center;
+  }
+  
+  .intro-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .intro {
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+  
+  .intro-image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .intro-image {
+    max-width: 15%;
+    width: 300px;
+    height: auto;
+  }
+  
+  .intro h2 strong {
+    display: block;
+    margin-top: -40px;
+}
+  
+a {
+    color: #ff9800;
+    text-decoration: none;
+    transition: color 0.3s;
+  
+    &:hover {
+      color: #ffa726;
+    }
+  }
+  
+  
+
+
+  

@@ -1,0 +1,38 @@
+.gallery-main {
+    background-color: #212529;
+    margin-bottom: 20px;
+  
+    
+  }
+  
+  .gallery-page {
+    background-image: linear-gradient(99.9deg, rgba(27, 24, 31, 1) 21.2%, rgba(50, 4, 89, 1) 84.8%);
+    color: white;
+    padding: 0px 0;
+    text-align: center;
+  }
+  
+  #carouselExampleInterval {
+    max-width: 512px;
+    margin: 0 auto;
+  }
+  
+  .carousel-inner {
+    max-height: 512px;
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: left;
+  }
+  

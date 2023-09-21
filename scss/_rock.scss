@@ -1,0 +1,39 @@
+@mixin tarjeta {
+  color: white;
+  text-align: justify;
+}
+
+.rock-page {
+    background-color: #d2d1d1;
+    background-image: url(../img/woodstockrocksection.jpg), linear-gradient(to top, #1F1F1F, #1F1F1F, #e0dfdf);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .card.custom-card-rock {
+    background-color: #535353;
+    border: 2px solid white;
+    margin-bottom: 15px;
+  }
+  
+  .card-text {
+    @include tarjeta;
+  }
+  
+  .card-text-rock {
+    font-family: 'Share Tech Mono', monospace;
+  }
+  
+  .titles-card {
+    justify-content: center;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+  }
+  
+  .sections-title2rock {
+    margin-top: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  

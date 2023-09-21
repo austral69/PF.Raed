@@ -1,0 +1,22 @@
+body {
+    font-family: $body-font;
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    color: $text-body-color;
+}
+
+header, footer {
+    background-color: $header-bg-color;
+    color: $header-text-color;
+    padding: $header-padding;
+    text-align: center;
+}
+
+h1{
+    font-family: $h1-font;
+}
+
+h2{
+    font-family: $h2-font;
+}

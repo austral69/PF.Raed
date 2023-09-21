@@ -1,0 +1,74 @@
+nav {
+    background-color: #444;
+    padding: 10px 0;
+  
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+  
+    li {
+      margin: 0 15px;
+    }
+  
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+  
+      &:hover {
+        color: #ff9800;
+      }
+    }
+  }
+  
+  
+  
+  .navbar {
+    max-width: 100%;
+  
+    
+    margin: 0 auto;
+  
+   
+    text-align: center;
+  
+    
+  }
+  
+  /*GLOW PISOS*/
+  
+  .navbar-nav .nav-item.dropdown .nav-link.active {
+    
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  
+    
+    background-image: linear-gradient(45deg, #ffcc00, #ff0066);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: glowing 2s infinite;
+  }
+  
+  /*GLOW ANIMACIÓN */
+  @keyframes glowing {
+    0% {
+      opacity: 0.6;
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+  
+    50% {
+      opacity: 1;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.9);
+    }
+  
+    100% {
+      opacity: 0.6;
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+  }
+  

@@ -1,343 +1,438 @@
-/*ESTILOS GENERALES*/ 
+@charset "UTF-8";
+.alternative-page {
+  background-color: #AB92C9;
+  font-family: "Nunito Sans", sans-serif;
+  background-image: url(../img/pixelback.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
+.card.custom-card-alternative {
+  background-color: #604868;
+  border: 2px solid white;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  color: white;
+  text-align: justify;
+}
+
+.card-text-alternative {
+  font-family: "Yatra One", cursive;
+}
+
+.titles-card {
+  justify-content: center;
+  text-align: center;
+  font-family: "Fruktur", cursive;
+}
+
+.sections-title2alternative {
+  margin-top: 25px;
+  font-family: "Yatra One", cursive;
+}
+
+.dj-page {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Nunito Sans", sans-serif;
+  justify-content: center;
+  background-image: linear-gradient(to right, #bdc3c7, #46617b);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.dj-footer {
+  margin-bottom: 0;
+  padding: 20px;
+}
+
+.gallery-main {
+  background-color: #212529;
+  margin-bottom: 20px;
+}
+
+.gallery-page {
+  background-image: linear-gradient(99.9deg, rgb(27, 24, 31) 21.2%, rgb(50, 4, 89) 84.8%);
+  color: white;
+  padding: 0px 0;
+  text-align: center;
+}
+
+#carouselExampleInterval {
+  max-width: 512px;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  max-height: 512px;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: left;
+}
+
+.h1-always {
+  font-family: "Tilt Prism", cursive;
+}
+
+.always-page {
+  font-family: "Nunito Sans", sans-serif;
+  color: whitesmoke;
+  background-image: url(../img/alternativebg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.always-artists .card {
+  margin: 0;
+}
+
+.rock-page {
+  background-color: #d2d1d1;
+  background-image: url(../img/woodstockrocksection.jpg), linear-gradient(to top, #1F1F1F, #1F1F1F, #e0dfdf);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.card.custom-card-rock {
+  background-color: #535353;
+  border: 2px solid white;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  color: white;
+  text-align: justify;
+}
+
+.card-text-rock {
+  font-family: "Share Tech Mono", monospace;
+}
+
+.titles-card {
+  justify-content: center;
+  text-align: center;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.sections-title2rock {
+  margin-top: 25px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin: 10px 0;
+  }
+}
+/* Mostrar el botón cuando se desplaza hacia abajo */
+@media (min-height: 400px) {
+  #scroll-to-top-button {
+    display: block;
+  }
+}
 body {
-    font-family: 'Varela Round', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #a19898;
-    color: #333;
+  font-family: "Varela Round", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #a19898;
+  color: #333;
 }
 
 header, footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-h1{
-    font-family:'Tilt Prism', cursive;
+h1 {
+  font-family: "Tilt Prism", cursive;
 }
 
-h2{
-    font-family: 'Ubuntu', sans-serif;
+h2 {
+  font-family: "Ubuntu", sans-serif;
 }
 
 nav {
-    background-color: #444;
-    padding: 10px 0;
+  background-color: #444;
+  padding: 10px 0;
 }
-
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
-
 nav li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
-
 nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
 }
-
 nav a:hover {
-    color: #ff9800;
+  color: #ff9800;
 }
 
-/* Scroll to top */
+.navbar {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
 
+/*GLOW PISOS*/
+.navbar-nav .nav-item.dropdown .nav-link.active {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  background-image: linear-gradient(45deg, #ffcc00, #ff0066);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: glowing 2s infinite;
+}
+
+/*GLOW ANIMACIÓN */
+@keyframes glowing {
+  0% {
+    opacity: 0.6;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    opacity: 0.6;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
+/*SCROLL2TOP */
 #scroll-to-top-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px; 
-    background-color: #007bff; 
-    border-radius: 50%; 
-    padding: 10px;
-    text-align: center;
-    font-size: 24px; 
-    text-decoration: none;
-    display: none; 
-    transition: background-color 0.3s; 
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  text-decoration: none;
+  display: none;
+  transition: background-color 0.3s;
 }
-
 #scroll-to-top-button img {
-    display: block;
-    margin: 0 auto; 
-    width: 100%; 
-    height: auto;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
-
 #scroll-to-top-button:hover {
-    background-color: #0056b3; 
+  background-color: #0056b3;
 }
 
-/* Mostrar el botón cuando se desplaza hacia abajo */
-@media (min-height: 400px) {
-    #scroll-to-top-button {
-        display: block;
-    }
-}
-
-/*SECCIONES*/
+/*MEDIA DE SCROLL EN MEDIAS*/
 .category {
-    background-color: #d2d1d1;
-    padding: 40px 0;
-    text-align: center;
+  background-color: #d2d1d1;
+  padding: 40px 0;
+  text-align: center;
 }
-
 .category h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .artist {
-    display: inline-block;
-    margin: 0 15px;
-    max-width: 250px;
-    text-align: center;
+  display: inline-block;
+  margin: 0 15px;
+  max-width: 250px;
+  text-align: center;
 }
-
 .artist img {
-    max-width: 100%;
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    border-radius: 12px;
-    transition: transform 0.3s;
+  max-width: 100%;
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 12px;
+  transition: transform 0.3s;
 }
-
-.artist-details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5px;
-}
-
-.artist-details img{
-    width: 60px;
-    margin-right: 3px;
-}
-
-.artist-details p{
-    margin: 0;
-}
-
-/*Información específica sobre el lugar de origen en cartas de INDEX*/
 
 .artist-details {
-    position: relative;
-    display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+.artist-details img {
+  width: 60px;
+  margin-right: 3px;
+}
+.artist-details p {
+  margin: 0;
+}
+
+.question-mark {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.question-mark-image {
+  max-width: 40%;
+  max-height: 40%;
+  margin-top: 10px;
+}
+
+.question-mark-text {
+  position: absolute;
+  top: 100%;
+  /* Cambiamos "top" para que esté debajo de la imagen */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px 10px;
+  /* Ajustamos el espaciado interior */
+  border-radius: 10px;
+  /* Agregamos bordes redondeados */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.question-mark-link:hover .question-mark-text {
+  opacity: 1;
+}
+
+.artist-details {
+  position: relative;
+  display: inline-block;
 }
 
 .country-info {
-    position: absolute;
-    top: 10px; 
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 14px;
-    white-space: nowrap;
-    opacity: 0;
-    transition: opacity 0.2s;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 
 .artist-details:hover .country-info {
-    opacity: 1;
+  opacity: 1;
 }
-
-
 
 .artist h3 {
-    font-size: 20px;
-    margin-top: 10px;
-    color: #333;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #333;
 }
-
 .artist p {
-    font-size: 16px;
-    color: #777;
+  font-size: 16px;
+  color: #777;
 }
-
 .artist:hover img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-
-
-/*INTRODUCCIÓN*/
 .intro {
-    background-color: #ff9800;
-    color: white;
-    padding: 80px 0;
-    text-align: center;
+  background-image: linear-gradient(to bottom, #ff9800, #CE520A);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
 }
 
-.intro-paragraph{
-    text-align: justify;
+.intro-paragraph {
+  text-align: justify;
 }
-
-.intro-paragraph ul{
-    list-style-type: none;
-    padding-left: 0;
+.intro-paragraph ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .intro-subtitle {
-    text-align: center;
+  text-align: center;
 }
 
 .intro-list {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+  list-style: none;
+  padding: 0;
+  text-align: center;
 }
-
 .intro-list li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .intro h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
-
 .intro p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .intro-image-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .intro-image {
-    max-width: 100%;
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 15%;
+  width: 300px;
+  height: auto;
 }
 
-.intro h2 strong{
-    display: block;
-    margin-top: -40px;
+.intro h2 strong {
+  display: block;
+  margin-top: -40px;
 }
 
-
-/*FOOTER*/
-footer {
-    margin-top: 20px;
-}
-
-/*Estilos para enlaces*/
 a {
-    color: #ff9800;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: #ff9800;
+  text-decoration: none;
+  transition: color 0.3s;
 }
-
 a:hover {
-    color: #ffa726;
+  color: #ffa726;
 }
 
-/* Ajustes generales y ROCK*/
-.rock-page{
-    background-color: #b5b2ac;
+footer {
+  margin-top: 20px;
 }
 
-.alternative-page{
-    background-color: #ff9800;
-}
-
-/* color/margen de tarjeta de secciones */
-.card.custom-card-rock{
-    background-color: #535353;
-    border: 2px solid white;
-    margin-bottom: 15px;
-}
-
-/* modificando las tarjetas de bootstrap (ROCK)*/
-.card-text{
-    color: white;
-    text-align: justify;
-}
-.card-text-rock{
-    font-family: 'Share Tech Mono', monospace;
-}
-
-.titles-card{
-    justify-content: center;
-    text-align: center;
-    font-family: 'Share Tech Mono', monospace;
-}
-
-/*h2 de sección rock*/
-
-.sections-title2rock{
-    margin-top: 25px;
-    font-family: 'Bebas Neue', sans-serif;
-}
-
-
-
-/* Ajustes generales y ALTERNATIVO */
-
-.alternative-page{
-    background-color: #b5b2ac;
-}
-
-
-/* color/margen de tarjeta de secciones */
-.card.custom-card-alternative{
-    background-color: #604868;
-    border: 2px solid white;
-    margin-bottom: 15px;
-}
-
-/* modificando las tarjetas de bootstrap (ALTERNATIVO)*/
-.card-text{
-    color: white;
-    text-align: justify;
-}
-.card-text-alternative{
-    font-family: 'Yatra One', cursive;
-}
-
-.titles-card{
-    justify-content: center;
-    text-align: center;
-    font-family: 'Fruktur', cursive;
-}
-
-/*h2 de sección alternativo*/
-
-.sections-title2alternative{
-    margin-top: 25px;
-    font-family: 'Yatra One', cursive;
-}
-
-
-/*MEDIA QUERIES*/
-@media screen and (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav li {
-        margin: 10px 0;
-    }
-}
+/*# sourceMappingURL=style.css.map */
