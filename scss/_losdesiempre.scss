@@ -1,17 +1,38 @@
-.h1-always {
-    font-family: 'Tilt Prism', cursive;
-  }
-  
-  .always-page {
-    font-family: 'Nunito Sans', sans-serif;
+
+
+.always-page {
+    background-color: #d2d1d1;
     color: whitesmoke;
-    background-image: url(../img/alternativebg.jpg);
-    background-size: contain;
+    background-image: url(../img/always-background.jpg), linear-gradient(to bottom,#030E24, #030E23); 
     background-repeat: no-repeat;
     background-position: center center;
+    font-family: 'Nunito Sans', sans-serif;
+    
   }
   
-  .always-artists .card {
-    margin: 0;
+  .card.custom-card-always {
+    background-color: #5E7994;
+    border: 2px solid white;
+    margin-bottom: 15px;
+  }
+  
+  .card-text {
+    color: white;
+    text-align: justify;
+  }
+  
+  .card-text-always {
+    font-family: 'Share Tech Mono', monospace;
+  }
+  
+  .titles-card {
+    justify-content: center;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+  }
+  
+  .sections-title2always {
+    margin-top: 25px;
+    font-family: 'Bebas Neue', sans-serif;
   }
   
